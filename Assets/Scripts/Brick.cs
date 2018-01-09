@@ -8,11 +8,12 @@ public class Brick : MonoBehaviour {
 
 	public int maxHits;
 	private int timesHit;
-	
+	private LoadManager loadManager;
 	void Start ()
 	{
 		timesHit = 0;
-		
+		loadManager = GameObject.FindObjectOfType<LoadManager>();
+
 	}
 	
 	// Update is called once per frame
@@ -24,5 +25,16 @@ public class Brick : MonoBehaviour {
 	void OnCollisionEnter2D(Collision2D col)
 	{
 		timesHit++;
+		SimulateWin();
 	}
+	
+	// Todo remove this method once we can actually win
+
+	void SimulateWin(){
+		loadManager.LoadNextLevel();
+	}
+
 }
+
+
+
