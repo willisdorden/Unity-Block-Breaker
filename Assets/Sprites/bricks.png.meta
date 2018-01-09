@@ -1,9 +1,12 @@
 fileFormatVersion: 2
-guid: 6eef60081c7e74e50afd7d6f9cc0b3c0
-timeCreated: 1515173226
+guid: 54c11ea4d6c6e435dbe252cd9647909e
+timeCreated: 1515531003
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: largebrick
+    21300002: small brick 1
+    21300004: small brick 2
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -40,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -103,7 +106,49 @@ TextureImporter:
     overridden: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: largebrick
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 86
+        width: 128
+        height: 41
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: small brick 1
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 44
+        width: 65
+        height: 40
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: small brick 2
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 2
+        width: 65
+        height: 40
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
     outline: []
     physicsShape: []
   spritePackingTag: 
