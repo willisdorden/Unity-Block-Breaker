@@ -1,12 +1,14 @@
 fileFormatVersion: 2
-guid: 54c11ea4d6c6e435dbe252cd9647909e
-timeCreated: 1515531003
+guid: 0d787e7088c604167a91530c70d69d44
+timeCreated: 1515614736
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: largebrick
-    21300002: small brick 1
-    21300004: small brick 2
+    21300000: right brick
+    21300002: left brick
+    21300004: largebrick
+    21300006: 1 hit
+    21300008: 2 hit
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -108,43 +110,71 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: largebrick
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 86
-        width: 128
-        height: 41
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: small brick 1
-      rect:
-        serializedVersion: 2
-        x: 3
-        y: 44
-        width: 65
-        height: 40
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: small brick 2
+      name: right brick
       rect:
         serializedVersion: 2
         x: 61
-        y: 2
+        y: 179
         width: 65
         height: 40
-      alignment: 6
-      pivot: {x: 0, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: left brick
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 134
+        width: 65
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: largebrick
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 90
+        width: 128
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 1 hit
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 46
+        width: 128
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 2 hit
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2
+        width: 128
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
