@@ -23,8 +23,8 @@ GameObject:
   - component: {fileID: 61160104962689484}
   - component: {fileID: 114243050863962340}
   m_Layer: 0
-  m_Name: 2hit
-  m_TagString: Untagged
+  m_Name: Yellow Brick
+  m_TagString: Breakable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36,7 +36,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1584161150251180}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8, y: 1, z: 0}
+  m_LocalPosition: {x: 2.3899999, y: 7.59, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -52,7 +52,7 @@ BoxCollider2D:
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_UsedByEffector: 1
+  m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
@@ -78,9 +78,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0388b2107ff744ab9b7393f1ff515be9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHits: 2
   hitSprites:
   - {fileID: 21300006, guid: 0d787e7088c604167a91530c70d69d44, type: 3}
+  - {fileID: 21300008, guid: 0d787e7088c604167a91530c70d69d44, type: 3}
 --- !u!212 &212877358015078946
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -116,7 +116,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300004, guid: 0d787e7088c604167a91530c70d69d44, type: 3}
-  m_Color: {r: 0, g: 1, b: 0.13103461, a: 1}
+  m_Color: {r: 0.77931035, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
