@@ -13,8 +13,8 @@ public class ball : MonoBehaviour
 	void Start ()
 	{
 		paddle = GameObject.FindObjectOfType<Paddle>();
-	paddleToBallVector = this.transform.position - paddle.transform.position;
-
+		paddleToBallVector = this.transform.position - paddle.transform.position;
+		
 	}
 	
 	// Update is called once per frame
@@ -32,4 +32,15 @@ public class ball : MonoBehaviour
 			}
 		}
 	}
+	void OnCollisionEnter2D(Collision2D collision)
+	{
+		if (hasStarted)
+		{
+			AudioSource audio = GetComponent<AudioSource>();
+			audio.Play();
+		}
+	}
+
+	
+	
 }
