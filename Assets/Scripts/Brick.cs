@@ -7,11 +7,19 @@ public class Brick : MonoBehaviour {
 	// Use this for initialization
     public Sprite[] hitSprites;
 
-	
+	private	bool isBreakable;
 	private int timesHit;
 	private LoadManager loadManager;
+	public static int breakableCount = 0;
+	
+
 	void Start ()
 	{
+		isBreakable = (this.tag == "Breakable");
+		
+		if (isBreakable){
+		breakableCount++;
+		}
 		timesHit = 0;
 		loadManager = GameObject.FindObjectOfType<LoadManager>();
 
@@ -25,16 +33,21 @@ public class Brick : MonoBehaviour {
 
 	void OnCollisionEnter2D(Collision2D col)
 	{
-		bool isBreakable = (this.tag == "Breakable");
+		
 		if (isBreakable){
+		
 		HandleHits();
 		}
 	}
 
 	void HandleHits(){
+	
 		timesHit++;
 		int maxHits = hitSprites.Length + 1;
+
 		if (timesHit >= maxHits){
+			breakableCount--;
+			loadManager.BrickDestroyed();
 			Destroy(gameObject);
 		}else{
 			LoadSprites();
